@@ -11,8 +11,8 @@ public class LineComparsion {
 		y1 = scanner.nextInt();
 		x2 = scanner.nextInt();
 		y2 = scanner.nextInt();
-		int lineLength = (int)Math.sqrt(Math.pow((x2-x1), 2) 
-				+ Math.pow((y2-y1), 2) );
+		int lineLength = (int)Math.sqrt(Math.pow((x1-x2), 2) 
+				+ Math.pow((y1-y2), 2) );
 		return lineLength;
 		
 	}
@@ -20,8 +20,11 @@ public class LineComparsion {
 		if(lineOneLength == lineTwoLength ) {
 			System.out.println("Lines are Equal");
 		}
+		else if(lineOneLength > lineTwoLength){
+			System.out.println("Line One is greater than Line Two ");
+		}
 		else {
-			System.out.println("Lines are not Equal");
+			System.out.println("Line Two is greater than Line One ");
 		}
 	}
 
@@ -34,5 +37,4 @@ public class LineComparsion {
 		
 
 	}
-
 }
